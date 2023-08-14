@@ -1,0 +1,1163 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    width: 1900px;
+    margin: 0 auto;
+}
+@media (max-width: 1899px){
+    main{
+        width: 100%;
+       margin: 0;
+    }
+}
+
+body a{
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+}
+
+.headers {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    width: 1480px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 82px;
+    height: 64px;
+}
+
+.nav {
+    display: flex;
+    list-style: none;
+}
+
+.nav li {
+    margin: 0 0px;
+}
+
+.nav a {
+    font-weight: 500;
+    font-size: 18px;
+    color: #000;
+    margin: 0 20px;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: #F15B4E;
+}
+
+.get-btn {
+   font-family: 'Inter', sans-serif;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    width: 180px;
+    height: 46px;
+    border: 1px solid #F15B4E;
+    padding: 16px, 50px, 16px, 50px;
+    gap: 10px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 100px;
+    margin-right: 20px;
+    background: #F15B4E;;
+}
+
+.toggle {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .headers {
+        justify-content: space-between;
+        padding: 10px;
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .headers{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .nav-button a{
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px;
+    }
+    .buttons{
+        display: none;
+    }
+
+    .nav{
+        display: none;
+    }
+    .nav.active {
+        display: block;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        z-index: 1;
+    }
+
+    .nav li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .toggle {
+        display: block;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        position: relative;
+        z-index: 2; 
+    }
+
+    .toggle span {
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: #333; 
+        margin-bottom: 5px; 
+        transition: all 0.3s ease; 
+    }
+
+    .toggle span:nth-child(1) {
+        transform-origin: top left; 
+    }
+
+    .toggle span:nth-child(3) {
+        transform-origin: bottom left; 
+    }
+
+    .toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px); 
+    }
+
+    .toggle.active span:nth-child(2) {
+        opacity: 0; 
+    }
+
+    .toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px); 
+    }
+
+}
+/* ------------------------------------header end ------------------------------------------ */
+
+.banner{
+    background-color: #ECF2F8;
+    width: 100%;
+    height: 993px;
+}
+
+
+.banner-detils{
+    width: 960px;
+    padding-top: 70px;
+    margin: 0px auto;
+    text-align: center;
+}
+.banner-detils h1{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 62px;
+}
+
+.banner-detils p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #00263D;
+    line-height: 35px;
+}
+.threetext{
+   width: 433px;
+   margin: 0 auto;
+   display: flex;
+   gap: 10px;
+   text-align: center;
+}
+.threetext p{
+    font-family: sans-serif;
+    font-weight: 500;
+    color: #00263D;
+    font-size: 48px;
+    line-height: 62px;
+}
+#text{
+    color: #F15B4E;
+}
+.banner-btn{
+    margin: 20px auto;
+    width: 268px;
+    height: 69px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.banner-img{
+    width: 1480px;
+    height: 507px;
+    margin: 0 auto;
+    display: grid;
+    margin-top: -80px;
+    grid-template-columns: auto auto auto auto auto auto;
+
+}
+.item3 {
+    grid-area:span 2 / span 2;
+  }
+  .item1 {
+    margin-left: -130px;
+  }
+  .item2 {
+    margin-left: -174px;
+    margin-top: 190px;
+  }
+  .item3{
+    width: 425px;
+    height: 425px;
+    display: flex;
+    justify-content: end;
+    margin-left: 110px;
+    margin-top: 60px;
+  }
+  .item4{
+    margin-left: -389px;
+    margin-top: 187px;
+  }
+  .item5{
+    margin-left: -344px;
+  }
+.jwalary_box{
+    width: 225px;
+    height: 225px;
+    background-color: white;
+    position: relative;
+    transform: translateX(180px) rotate(45deg);
+    
+}
+
+.jwalary_box img{
+    width:  225px;
+    height: 225px;
+    rotate: -45deg;
+    overflow: hidden;
+    opacity: 0.3;
+    transition: all 0.2s ease-in;
+}
+
+.jwalary_box img:hover{
+    opacity: 100%;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* ----------------------- banner end  ------------------------ */
+
+
+@keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .logos {
+    width: 1062px;
+    height: 88px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: white;
+    white-space: nowrap;
+    position: relative;
+  }
+  
+  .logos:before,
+  .logos:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+  }
+  
+  .logos:hover .logos-slide {
+    animation-play-state: paused;
+  }
+  
+  .logos-slide {
+    display: inline-block;
+    animation: 15s slide infinite linear;
+  }
+
+  .logos-slide img {
+   width: 113px;
+   height: 67px;
+   margin: 30px;
+  }
+
+
+  /* -----------------------logo slider end ------------------------ */
+
+.jewelry-photography {
+    background: #F3F7FC;
+    width: 100%;
+    padding: 100px 0px;
+    margin-top: 30px;
+}
+
+.jewelry-photography h1{
+    font-family: 'Inter', sans-serif;
+    color: #00263D;
+    text-align: center;
+    font-weight: 300;
+    line-height: 58px;
+    font-size: 40px;
+    padding-bottom: 100px;
+   
+}
+.jewelry-photography h1  span{
+    font-weight: 500;
+}
+.jewelry-photography-detais{
+    width: 700px;
+   
+  }
+.photography-detais{
+    width: 372px;
+    margin: 219px 0px 325px 238px;
+
+}
+.photography-detais h2{
+    color: #00263D;
+    font-family: Montserrat;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38px; /* 135.714% */
+    letter-spacing: 0.56px;
+}
+.photography-detais span{
+    font-weight: 700;
+}
+.photography-detais p{
+    margin-top:58px;
+    color: #00263D;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; 
+    letter-spacing: 0.64px;
+}
+.jewelry-slider-details{
+    padding: 25px 35px;
+}
+.jewelry-slider-details h2{
+    color: #F15B4E;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+}
+.jewelry-slider-details p{
+    color: #00263D;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.36px;
+    text-transform: uppercase;
+}
+.slider-details p{
+    margin-top:20px;
+    width: 178px;
+    height: 40px;
+    flex-shrink: 0;
+    color: #00263D;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; 
+    letter-spacing: 0.24px;
+    text-transform: uppercase;
+}
+
+.jewelry-photography-products {
+    background-color: white;
+    margin-left: 265px;
+    display: flex;
+}
+
+
+.left-right-button {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+/* slider 2  */
+
+.productCard-container {
+    display: flex;
+    overflow: hidden;
+}
+
+.productCard {
+    display: flex;
+    transition: transform 0.5s;
+}
+
+.product-card {
+    margin: 58px 19px 60px 0;
+    background: #FFF;
+    box-shadow: 0px 2px 8px 0px #DDECF4;
+}
+
+.product-card img {
+    height: 460px;
+}
+
+.slide-details {
+    margin: 0;
+    padding: 25px 0 35px 49px;
+}
+
+.product-card-heading {
+    color: #F15B4E;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0 0 4px 0;
+}
+
+.product-card-description {
+    color: #00263D;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0 0 20px 0;
+
+}
+
+.product-card-size {
+    opacity: 0.7;
+    color: #00263D;
+    font-family: Montserrat;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 0 0 24px 0;
+
+}
+
+.product-card-size-heading {
+    color: #00263D;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    opacity: 0.7;
+}
+
+.horizental-line {
+    width: 370px;
+    height: 1px;
+    opacity: 0.07;
+    background: #00263D;
+    margin: 0 0 43px 0;
+
+}
+
+.slide-box {
+    display: flex;
+    gap: 7px;
+}
+
+.slide-box p {
+    display: inline-flex;
+    padding: 4px 18px;
+    align-items: flex-start;
+    border-radius: 4px;
+}
+
+.slide-box .degree {
+    border: 1px solid #9E88F2;
+}
+
+.slide-box .still {
+    border: 1px solid #5BD1CA;
+}
+
+.slide-box .version {
+    border: 1px solid #98B8F6;
+    ;
+}
+
+.slide-box .video {
+    border: 1px solid #FBBFB2;
+}
+
+.finished-jewelry {
+    display: none;
+}
+
+.loose-stones {
+    display: none;
+}
+
+.productCard-button {
+    cursor: pointer;
+}
+
+.pagination {
+    display: none;
+}
+
+/* accessories */
+.accessories {
+    display: none;
+}
+
+/* Responsive styles for mobile */
+@media screen and (max-width: 767px) {
+
+    /* navbar  */
+    .logo {
+        padding: 10px 0 10px 16px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 100px;
+        width: 100%;
+    }
+
+    .desktop-view {
+        display: none;
+    }
+
+    .nav-links a {
+        padding: 10px 20px;
+    }
+
+    .show-nav {
+        display: flex;
+    }
+
+    .navbar {
+        position: relative;
+    }
+
+    .mobile-icon {
+        display: block;
+    }
+
+
+    /* slide  */
+    .slider-container {
+        width: 100%;
+        margin: 8px 0 10px 0;
+    }
+
+    .slide {
+        flex: 0 0 28.57%;
+    } */
+
+    /* jewelry-photography  */
+
+    .jewelry-photography-products {
+        background-color: white;
+        margin-left: 0px;
+        display: block;
+    }
+
+    .jewelry-photography-2nd-heading {
+        width: 320px;
+        padding: 36px 0 49px 40px;
+    }
+
+    .jewelry-photography-2nd-description {
+        font-size: 14px;
+        line-height: 25px;
+        letter-spacing: 0.56px;
+        padding-top: 38px;
+    }
+
+    .left-right-button {
+        display: none;
+    }
+
+    /* slider 2  */
+
+    .productCard-container {
+        display: flex;
+        overflow: hidden;
+    }
+
+    .productCard {
+        display: flex;
+        transition: transform 0.5s ease-out;
+    }
+
+    .product-card {
+        width: 259px;
+        margin: 0 9px 33px 8px;
+        background: #FFF;
+        box-shadow: 0px 2px 8px 0px #DDECF4;
+    }
+
+    .product-card img {
+        height: 268px;
+    }
+
+    .slide-details {
+        margin: 0;
+        padding: 14px 0 22px 27px;
+    }
+
+    .product-card-heading {
+        font-size: 14px;
+        margin: 0 0 2px 0;
+    }
+
+    .product-card-description {
+        font-size: 10px;
+        margin: 0 0 11px 0;
+
+    }
+
+    .product-card-size {
+        font-size: 9px;
+        margin: 0 0 20px 0;
+    }
+
+    .product-card-size-heading {
+        font-size: 9px;
+    }
+
+    .horizental-line {
+        width: 209px;
+        height: 1px;
+        margin: 0 0 21px 0;
+
+    }
+
+    .slide-box {
+        display: flex;
+        gap: 4px;
+    }
+
+    .slide-box p {
+        display: inline-flex;
+        padding: 2px 11px;
+        align-items: flex-start;
+        border-radius: 4px;
+    }
+
+    .finished-jewelry {
+        display: inline-flex;
+        padding: 2px 11px;
+        align-items: flex-start;
+        border-radius: 4px;
+        margin: 0;
+        border: 1px solid #5BD1CA;
+
+    }
+
+    .loose-stones {
+        display: inline-flex;
+        padding: 2px 11px;
+        align-items: flex-start;
+        border-radius: 4px;
+        margin: 0;
+        border: 1px solid #5BD1CA;
+    }
+
+    .pagination {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .pagination-dot {
+        width: 100%;
+        height: 10px;
+        background-color: gray;
+        cursor: pointer;
+    }
+
+    .pagination-dot.active {
+        background-color: #F15B4E;
+    }
+
+    footer p {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 12px;
+    }
+}
+
+
+/* --------------------------end----------------------------------- */
+.Product-Comparison-Chart{
+    width: 960px;
+    height: 1008px;
+    margin: 0px auto ;
+    margin-bottom: 200px;
+}
+.product-title{
+    padding: 60px 0px;
+    text-align: center;
+}
+.product-title p{
+    color:  #F15B4E;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.56px;
+}
+.product-title h1{
+    color: #00263D;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 58px;
+    letter-spacing: 0.8px;
+}
+.product-title h1 samp{
+font-weight: 600;
+}
+.table-direction{
+    text-align: end;
+    display: flex;
+    align-items: end;
+    padding: 20px;
+    justify-content: end;
+}
+.table-direction p{
+    padding-right: 15px;
+}
+
+.direction{
+    width: 280px;
+    margin-left: 50px;
+}
+.direction p{
+    color:  #00263D;
+    font-size: 12px;
+    font-weight: 400;
+}
+.table-img{
+   width: 100%;
+   height: 96px;
+   box-shadow: 1px 0px 0px 0px rgba(0, 38, 61, 0.10);
+}
+.table-img img{
+    display: flex;
+    width: 210px;
+    height: 96px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+.ferure-hading{
+    display: flex;
+    width: 324px;
+    height: 190px;
+    justify-content: center;
+    align-items: center;
+    background: #ECEFF4;
+    box-shadow: 1px 0px 0px 0px rgba(0, 38, 61, 0.10);
+}
+.ferure-hading p{
+    color: #00263D;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+}
+.table-heding{
+    width: 210px;
+    height: 190px;
+    text-align: start;
+    padding: 0px 35px;
+    background: #F6F7F9;
+}
+.table-heding h3{
+    color: #00263D;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 58px;
+    letter-spacing: 0.32px;
+}
+.table-heding p{
+    color:#00263D;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; 
+    letter-spacing: 0.36px;
+}
+.table-feature{
+    height: 68px;
+    background: #F9F9FB;
+    box-shadow: 0px 1px 0px 0px rgba(0, 38, 61, 0.10), 1px 0px 0px 0px rgba(0, 38, 61, 0.05);
+}
+.table-feature p{
+    display: flex;
+    padding: 20px 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: stretch; 
+}
+.feature-data{
+    width: 210px;
+    padding: 20px 40px;
+    background: #FFF;
+    box-shadow: 0px 1px 0px 0px rgba(0, 38, 61, 0.10), 1px 0px 0px 0px rgba(0, 38, 61, 0.05);
+}
+.feature-data p{
+    color: #00263D;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 33px; 
+    letter-spacing: 0.28px;
+}
+
+/* ---------------------table end----------------------------- */
+.testimoniam-main{
+height: 115vh;
+}
+
+a{
+    text-decoration: none
+}
+ul{
+    list-style: none;
+}
+img{
+    vertical-align: middle;
+}
+
+.slick-track {
+    margin-top: 350px !important;
+}
+.slick-initialized .slick-slide {
+    display: block;
+    padding: 20px !important;
+}
+.Testimonials-detils{
+   position: absolute;
+   text-align: center;
+    width: 680px;
+   margin-left: 35%;
+}
+.Testimonials-detils article{
+    color: #233B4A;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 26px;
+    letter-spacing: 0.32px;
+    margin-top: 27px;
+}
+.test-text{
+    color: #F15B4E;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.56px;
+}
+.Testimonials-detils h1{
+    color: #00263D;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 58px; /* 145% */
+    letter-spacing: 0.8px;
+}
+.Testimonials-detils h1 samp{
+ font-weight: 600;
+}
+/*==================*/
+#person{
+    position: relative;
+    margin-top: 50px;
+    z-index: 1;
+}
+.testimoniam img{
+    height: 1090px;
+    position: absolute;
+}
+
+#person .person{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#person .person-image{
+    width: 792px;
+    padding: 20px;
+    margin-top: -139px;
+    margin-left: 250px;
+    rotate: -90deg;
+}
+.person-item {
+    gap: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.person-details{
+    width: 170px;
+    height: 100px;
+}
+.person-details{
+    color:#00263D;
+    font-family: Source Sans Pro;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.42px;
+}
+.person-details p{
+    color: #00263D;
+    font-family: Source Sans Pro;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.42px;
+}
+
+
+#person .person-image .person-item img {
+    transform: scale(1.2);
+    border-radius: 50%;
+    transition: all linear 0.4s;
+    rotate: 90deg;
+    opacity: 0.5;
+    width: 70px;
+    height: 70px;
+    
+}
+.slick-dots li:nth-child(2) {
+    margin: 165px 0px;
+    background: #DDDDDD;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+}
+.slick-dots li:nth-child(4) {
+    background: #DDDDDD;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+}
+.slick-dots li:nth-child(3) {
+    margin: 177px 0px;
+    background: #F15B4E;;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+}
+.slick-dots{
+    width: 1px;
+    margin: -260px 0px 0px 316px;
+    height: 388px;
+    rotate: 90deg;
+    background-color: #DDDDDD;
+}
+.slick-dots li:first-child {
+ display: none;
+}
+.slick-dots li button{
+    display: none;
+}
+
+#person .person-image .person-item .person-details{
+  display: none;
+
+}
+#person .person-image .person-item.slick-center img{
+    transform: scale(1.5);
+    rotate: 90deg;
+    margin-top: 100px;
+    margin-left: -46px;
+    opacity: 1;
+    width: 150px;
+    height: 150px;
+}
+#person .person-image .person-item.slick-center .person-details{
+    display: block;
+    rotate: 90deg;
+    margin-top: 100px;
+    margin-left: -63px;
+}
+.person-text{
+margin-left: 1100px;
+margin-top: -100px;
+position: absolute;
+    width: 280px;
+    padding: 50px 0;
+}
+.text-item img{
+    margin: 50px auto ;
+}
+.person-text .text-item{
+    color: #233B4A;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+    letter-spacing: 0.64px;
+}
+
+/* -------------------------------testimonial end---------------------------------- */
+.customers-say {
+    background: #F3F7FC;
+    width: 100%;
+    padding: 100px;
+}
+
+.customers-say-heading {
+    color: #00263D;
+    text-align: center;
+    padding-top: 71px;
+    padding-bottom: 61px;
+    font-size: 46px;
+    font-weight: 800;
+    font-family: 'Open Sans';
+    margin: 0;
+}
+
+.customers-style {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 38px;
+    overflow-x: hidden;
+    width: 1000px;
+}
+.customers-style::-webkit-scrollbar{
+    width: 0;
+}
+
+.customers {
+    min-width: 505px;
+    height: 216px;
+    border-radius: 24px;
+    background: #CCF2DD;
+    text-align: center;
+    margin-bottom: 109px;
+}
+
+
+.customers img {
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.customers-details {
+    width: 378px;
+    margin: auto;
+    padding-left: 63px;
+    padding-right: 64px
+}
+
+.customers h5 {
+    color: #005451;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.customers p {
+    color: #005451;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    margin: 0;
+    padding-top: 5px;
+}
+
+/* footer */
+footer {
+    background: #00263D;
+}
+
+footer p {
+    text-align: center;
+    padding-top: 51px;
+    padding-bottom: 50px;
+    color: #FFF;
+    font-size: 20px;
+    font-family: 'Open Sans';
+    font-weight: 500;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
